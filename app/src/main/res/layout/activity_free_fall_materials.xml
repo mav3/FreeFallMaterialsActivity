@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#003399"
+    tools:context=".FreeFallMaterialsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/scrollView_materials"
+        android:background="#ffffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ffffffff"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical"
+                android:id="@+id/linearLayout_tape">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imageView_tape"
+                    android:src="@drawable/tape"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Tape or another easily visible object"
+                    android:id="@+id/textView_tape"
+                    android:textColor="#f0000000"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical"
+                android:id="@+id/linearLayout_ruler">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imageView_ruler"
+                    android:src="@drawable/ruler"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Ruler"
+                    android:textColor="#f0000000"
+                    android:id="@+id/textView_ruler"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
