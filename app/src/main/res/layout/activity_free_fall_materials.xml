@@ -1,6 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" 
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#003399"
     tools:context=".FreeFallMaterialsActivity">
@@ -79,5 +79,15 @@
 
     </ScrollView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:text="Next >> "
+        android:textColor="#ffffffff"
+        android:id="@+id/textView_next"/>
 
 </LinearLayout>

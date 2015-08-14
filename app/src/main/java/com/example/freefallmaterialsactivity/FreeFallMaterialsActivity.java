@@ -1,9 +1,11 @@
 package com.example.freefallmaterialsactivity;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class FreeFallMaterialsActivity extends ActionBarActivity {
@@ -12,6 +14,18 @@ public class FreeFallMaterialsActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_free_fall_materials);
+
+        this.nextButton();
+    }
+
+    private void nextButton() {
+        final TextView  next = (TextView)findViewById(R.id.textView_next);
+
+        next.setOnClickListener((v) -> {
+            Intent startIntent = new Intent(FreeFallMaterialsActivity.this, FreeFallSetupActivity.class);
+            startActivity(startIntent);
+
+    });
     }
 
     @Override
